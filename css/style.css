@@ -102,6 +102,11 @@ img {
 
 
 /* ここから　入れたが反応のなかったものはコメントしている */
+html {
+    scroll-behavior: smooth;
+    /* スムーズにスクロールさせるコード */
+}
+
 .main {
     background-color: #E8D9BF;
     font-family: "游明朝", YuMincho;
@@ -252,7 +257,7 @@ img {
 
 .gallery li {
     width: 384px;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .event {
@@ -369,17 +374,21 @@ img {
     color: #ffffff;
 }
 
-/* gallary　スライダー ここから*/
-/* 矢印　白　＜＞ */
+/* gallary スライダー ここから*/
+/* 矢印 白 ＜＞ */
 .Arrow-Right {
     border-top: solid 5px #ffffff;
     border-right: solid 5px #ffffff;
     width: 24px;
     height: 24px;
+    transform: translateX(-50%);
     transform: rotate(45deg);
     position: absolute;
-    bottom: -265%;
-    left: 75%;
+    top: 50%;
+    right: 23%;
+    z-index: 80;
+    /* bottom: -265%; */
+
 }
 
 .Arrow-Left {
@@ -388,9 +397,16 @@ img {
     width: 24px;
     height: 24px;
     transform: rotate(45deg);
+    transform: translate Y(-50%);
+    /* Y軸に-50％揃え */
     position: absolute;
-    bottom: -265%;
+    top: 50%;
+    /* ポジションで上下真ん中揃え */
     left: 23%;
+    z-index: 100;
+    /* 位置を上に上げる */
+    /* bottom: -265%; */
+
 }
 
 /* スライダーここまで↑ */
@@ -406,6 +422,11 @@ img {
 
 
 @media screen and (max-width:1100px) {
+    html {
+        scroll-behavior: smooth;
+        /* スムーズにスクロールさせるコード */
+    }
+
     .pc_nav {
         display: none;
     }
@@ -507,6 +528,10 @@ img {
 }
 
 @media screen and (max-width:767px) {
+    html {
+        scroll-behavior: smooth;
+        /* スムーズにスクロールさせるコード */
+    }
 
     .header_wrap {
         padding-right: 0%;
@@ -711,12 +736,26 @@ img {
         width: 100%;
     }
 
-    .gallery .milk2,
+    /*  .gallery .milk2,
     .gallery .milk3,
     .gallery .milk4,
-    .gallery .milk5 {
+    .gallery .milk5,
+    .gallery .milk6 {
         display: none;
         width: 100%;
+    }
+ */
+    /* スライダー矢印none */
+    .Arrow-Right {
+        display: none;
+    }
+
+    .Arrow-Left {
+        display: none;
+    }
+
+    .slider1 .slick {
+        display: none;
     }
 
     /* event枠 */

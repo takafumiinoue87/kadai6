@@ -120,7 +120,7 @@
             <ul class="slider1">
                 <li class="milk1">
                     <picture>
-                        <source srcset="images/mobile_gallery-100.jpg" alt="お洒落なカフェの店内" media="(max-width:767px)">
+                        <source srcset="images/mobile_gallery-100.jpg" media="(max-width:767px)">
                         <img src="images/pc_gallary_05-100.jpg" alt="カフェの日常">
                     </picture>
                 </li>
@@ -130,8 +130,10 @@
                 <li class="milk5"><img src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーにミルクを入れている"></li>
                 <li class="milk6"><img src="images/pc_gallary_03-100.jpg" alt="カフェ全体が見えるおしゃれな空間"></li>
             </ul>
-            <div class="Arrow-Right"></div> <!-- 矢印右向きコード -->
-            <div class="Arrow-Left"></div> <!-- 矢印左向きコード -->
+            <!-- <div class="Arrow-Right"></div> -->
+            <!-- 矢印右向きコード -->
+            <!-- <div class="Arrow-Left"></div> -->
+            <!-- 矢印左向きコード -->
         </section>
         <p id="d"></p>
         <section class="event">
@@ -201,11 +203,10 @@
             Infinity: true,          /* trueでスライドをループさせる */
             slidesToShow: 5,         /* スライドを画面に5枚見せる */
             slidesToScroll: 1,       /* １回のスクロールで1枚移動する */
-            prevArrow: '<div class="slick-prev"></div>',  /* 矢印部分 */
-            nextArrow: '<div class="slick-next"></div>',
+            prevArrow: '<div class="Arrow-Left"></div>',  /* 矢印部分 */
+            nextArrow: '<div class="Arrow-Right"></div>',
             autoplaySpeed: 2000,
             dots: false,
-            arrows: false
         });
     </script>
 </body>
