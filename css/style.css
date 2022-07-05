@@ -374,6 +374,14 @@ html {
     color: #ffffff;
 }
 
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slick-slider img {
+    width: 100%;
+}
+
 /* gallary スライダー ここから*/
 /* 矢印 白 ＜＞ */
 .Arrow-Right {
@@ -748,10 +756,12 @@ html {
     /* スライダー矢印none */
     .Arrow-Right {
         display: none;
+        right: 3%;
     }
 
     .Arrow-Left {
         display: none;
+        left: 3%
     }
 
     .slider1 .slick {

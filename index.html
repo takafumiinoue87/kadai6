@@ -207,6 +207,12 @@
             nextArrow: '<div class="Arrow-Right"></div>',
             autoplaySpeed: 2000,
             dots: false,
+            responsive: [{
+                breakpoint: 767,/* 767px以下のサイズに適用 */
+                settings: {/* 適用する内容をここに書く */
+                    slidesToShow: 1,
+                },
+            },],
         });
     </script>
 </body>
